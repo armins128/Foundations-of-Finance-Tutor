@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Crypto"
+  short_description: "Tutor Foundations of Finance students in blockchain"
+  default_prompt: "Use $fof-crypto to help me learn Foundations of Finance."

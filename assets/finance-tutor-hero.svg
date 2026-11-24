@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="680" viewBox="0 0 1440 680" role="img" aria-labelledby="title desc">
+<title id="title">Foundations of Finance Tutor</title>
+<desc id="desc">WHU Otto Beisheim School of Management, Chair of Finance. A practice sheet on squared paper: a cash-flow timeline for a coffee cart, the student's NPV of -9.9010 in an answer box, and the tutor's margin note asking a true-or-false follow-up instead of giving the next answer.</desc>
+<defs>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M20 0H0V20" fill="none" stroke="#D9E1E4" stroke-width="1"/>
+  </pattern>
+  <filter id="lift" x="-10%" y="-10%" width="120%" height="125%">
+    <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1E2A33" flood-opacity="0.12"/>
+  </filter>
+</defs>
+<rect width="1440" height="680" fill="#F3F2EE"/>
+<image x="80" y="72" width="199" height="66" href="data:image/png;base64,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"/>
+<path d="M304 78V132" stroke="#054696" stroke-opacity="0.35" stroke-width="1.5"/>
+<text x="324" y="113" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#054696">Chair of Finance</text>
+
+<g font-family="Georgia, 'Times New Roman', serif" fill="#1E2A33">
+  <text x="80" y="256" font-size="64">Foundations</text>
+  <text x="80" y="328" font-size="64">of Finance Tutor</text>
+</g>
+<g font-family="Arial, Helvetica, sans-serif">
+  <text x="80" y="388" font-size="21" fill="#46535C">A ChatGPT plugin for the WHU course that asks</text>
+  <text x="80" y="418" font-size="21" fill="#46535C">you the next question instead of handing you</text>
+  <text x="80" y="448" font-size="21" fill="#46535C">the next answer</text>
+  <text x="80" y="516" font-size="16" fill="#76818A">14 skills  ·  7 course areas  ·  73 competencies</text>
+</g>
+
+<g transform="rotate(-1.2 1000 340)" filter="url(#lift)">
+  <rect x="700" y="72" width="600" height="540" rx="4" fill="#FCFBF8"/>
+  <rect x="700" y="72" width="600" height="540" rx="4" fill="url(#grid)"/>
+  <path d="M760 72V612" stroke="#E7B9B0" stroke-width="1.5"/>
+
+  <g font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="13" fill="#76818A">
+    <text x="780" y="112">Practice · Value · new task</text>
+    <text x="1210" y="112">4 pts</text>
+  </g>
+
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#1E2A33">
+    <text x="780" y="152">Ben wants to run a coffee cart on the Burgplatz.</text>
+    <text x="780" y="178">It costs €400 today and earns €120, €150 and</text>
+    <text x="780" y="204">€180 over three years. The rate is 7%.</text>
+    <text x="780" y="230">Calculate the NPV, rounded to 4 decimals.</text>
+  </g>
+
+  <g font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="15" fill="#1E2A33" text-anchor="middle">
+    <path d="M800 320H1240" stroke="#1E2A33" stroke-width="1.5"/>
+    <path d="M820 312V328M960 312V328M1100 312V328M1240 312V328" stroke="#1E2A33" stroke-width="1.5"/>
+    <text x="820" y="296">−400</text><text x="960" y="296">120</text><text x="1100" y="296">150</text><text x="1240" y="296">180</text>
+    <g fill="#76818A" font-size="13"><text x="820" y="350">t = 0</text><text x="960" y="350">1</text><text x="1100" y="350">2</text><text x="1240" y="350">3</text></g>
+  </g>
+
+  <g font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="15" fill="#46535C">
+    <text x="780" y="404">−400 + 120/1.07 + 150/1.07² + 180/1.07³</text>
+  </g>
+  <text x="780" y="452" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#46535C">NPV =</text>
+  <rect x="836" y="426" width="132" height="38" rx="2" fill="#FCFBF8" stroke="#1E2A33" stroke-width="1.5"/>
+  <text x="902" y="452" font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="17" fill="#1E2A33" text-anchor="middle">−9.9010</text>
+  <path d="M984 446l7 7 13-15" fill="none" stroke="#2F6B4F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#A8382A">
+    <path d="M780 500V556" stroke="#A8382A" stroke-width="2"/>
+    <text x="796" y="514">Right, and the sign tells Ben to skip it.</text>
+    <text x="796" y="538">True or false: the IRR of the cart</text>
+    <text x="796" y="562">is below 7%.</text>
+  </g>
+  <text x="1280" y="592" font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="12" fill="#9AA3AA" text-anchor="end">logged · V02 independent</text>
+</g>
+</svg>

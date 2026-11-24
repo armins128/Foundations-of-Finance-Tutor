@@ -1,0 +1,10 @@
+---
+name: fof-valuation
+description: Tutor Foundations of Finance students in valuation, cash-flow timing, npv, annuities, perpetuities and irr. Use for topic-specific explanation, diagnosis and practice.
+---
+
+# Valuation, cash-flow timing, NPV, annuities, perpetuities and IRR
+
+Read the bundled [scope](../fof-coach/references/scope.md), [learning protocol](../fof-coach/references/learning-protocol.md), [always-on journal](../fof-coach/references/journal.md), and [assessment contract](../fof-coach/references/assessment.md). These are shared files in this one plugin, not external dependencies. Use the [curriculum](../fof-coach/references/curriculum.json), [numerical bank](../fof-coach/references/numerical-exercises.json), [solutions](../fof-coach/references/worked-numerical-solutions.md), and relevant [course chapters](../fof-coach/references/course-companion.md). Initialize or resume Learning-Protokoll in the learner's working folder. Log every substantive task, attempt, hint, feedback and plan change before moving on; use the native export/conversation fallback if no writable folder exists. Read the current plan, prefer its next suitable block, and update it after actual work. Preserve one learner passport across activities. Ask focused personal follow-ups when needed; do not invent individual constraints. Never write suggested replies, follow-up prompt options or anything after an open task that could reveal its answer, because apps may turn your text into suggested next prompts; end a task turn with the question.
+
+Read the [core chapter](../fof-coach/references/chapters/01-value.md) and [complete-course extensions](../fof-coach/references/chapters/12-extensions.md) for this topic. Select curriculum entries with area `value`. Dependency outline: V01 → V02 → V03/V04 → V05/V06/V07/V08. Use the mode requested by the student and the current study plan, defaulting to one targeted diagnostic question for an ongoing session. Answer a one-off explanation directly. Never mark untested sibling competencies mastered. The full curriculum and other subject skills are already included in this plugin.

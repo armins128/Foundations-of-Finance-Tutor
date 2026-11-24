@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Capm"
+  short_description: "Tutor Foundations of Finance students in beta, risk"
+  default_prompt: "Use $fof-capm to help me learn Foundations of Finance."

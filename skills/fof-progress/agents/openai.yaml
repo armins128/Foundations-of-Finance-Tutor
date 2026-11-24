@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Progress"
+  short_description: "Show a Foundations of Finance learning board, explain"
+  default_prompt: "Use $fof-progress to help me learn Foundations of Finance."

@@ -1,0 +1,20 @@
+{
+  "name": "fof-learning",
+  "interface": {
+    "displayName": "Foundations of Finance"
+  },
+  "plugins": [
+    {
+      "name": "foundations-of-finance",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Study Plan"
+  short_description: "Create and adapt a Foundations of Finance study schedule"
+  default_prompt: "Use $fof-study-plan to help me learn Foundations of Finance."

@@ -1,0 +1,10 @@
+---
+name: fof-progress
+description: Show a Foundations of Finance learning board, explain readiness evidence, and export or resume a portable learning passport.
+---
+
+# Fof Progress
+
+Read the bundled [scope](../fof-coach/references/scope.md), [learning protocol](../fof-coach/references/learning-protocol.md), [always-on journal](../fof-coach/references/journal.md), and [assessment contract](../fof-coach/references/assessment.md). These are shared files in this one plugin, not external dependencies. Use the [curriculum](../fof-coach/references/curriculum.json), [numerical bank](../fof-coach/references/numerical-exercises.json), [solutions](../fof-coach/references/worked-numerical-solutions.md), and relevant [course chapters](../fof-coach/references/course-companion.md). Initialize or resume Learning-Protokoll in the learner's working folder. Log every substantive task, attempt, hint, feedback and plan change before moving on; use the native export/conversation fallback if no writable folder exists. Read the current plan, prefer its next suitable block, and update it after actual work. Preserve one learner passport across activities. Ask focused personal follow-ups when needed; do not invent individual constraints. Never write suggested replies, follow-up prompt options or anything after an open task that could reveal its answer, because apps may turn your text into suggested next prompts; end a task turn with the question.
+
+Render the seven-area board with assessed/total, observed levels, readiness contribution, stale evidence and a concrete next task. Expand to individual competencies on request. Never initialize an unknown area at zero knowledge or infer a probability of passing. Use the bundled [score.py](../fof-coach/scripts/score.py) when host execution is available; otherwise show transparent manual arithmetic or descriptive evidence. Dates must be observed, not invented. Export a personal JSON passport using the supplied template on request; resume by validating and checking an imported claim through retrieval. Do not write a student's history into plugin files or promise automatic memory across chats.

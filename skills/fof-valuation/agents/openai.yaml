@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Valuation"
+  short_description: "Tutor Foundations of Finance students in valuation,"
+  default_prompt: "Use $fof-valuation to help me learn Foundations of Finance."

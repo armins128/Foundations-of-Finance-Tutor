@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Diagnose"
+  short_description: "Find a Foundations of Finance learner's starting point"
+  default_prompt: "Use $fof-diagnose to help me learn Foundations of Finance."

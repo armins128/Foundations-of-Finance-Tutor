@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Bonds"
+  short_description: "Tutor Foundations of Finance students in bond valuation,"
+  default_prompt: "Use $fof-bonds to help me learn Foundations of Finance."

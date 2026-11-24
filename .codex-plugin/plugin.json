@@ -1,0 +1,39 @@
+{
+  "name": "foundations-of-finance",
+  "version": "0.2.0",
+  "description": "A self-contained Foundations of Finance learning companion with Socratic tutoring, adaptive diagnostics, practice and evidence-based progress.",
+  "author": {
+    "name": "Armin Samadi"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "homepage": "https://github.com/armins128/Foundations-of-Finance-Tutor",
+  "repository": "https://github.com/armins128/Foundations-of-Finance-Tutor",
+  "keywords": [
+    "finance",
+    "education",
+    "socratic-tutoring",
+    "WHU"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Foundations of Finance",
+    "shortDescription": "Learn finance, one reasoning step at a time",
+    "longDescription": "A complete course companion with fourteen skills, adaptive study planning, a continuous learning protocol and course-grounded practice.",
+    "developerName": "Armin Samadi",
+    "category": "Education & Research",
+    "defaultPrompt": [
+      "Help me find my Foundations of Finance starting point. Ask one question at a time.",
+      "Show my finance learning board and choose my next practice task."
+    ],
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/armins128/Foundations-of-Finance-Tutor",
+    "logo": "./assets/icon.svg",
+    "composerIcon": "./assets/icon.svg",
+    "brandColor": "#172A3A",
+    "screenshots": []
+  }
+}

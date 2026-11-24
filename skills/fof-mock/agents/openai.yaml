@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Mock"
+  short_description: "Run a freshly generated, exam-style timed Foundations of"
+  default_prompt: "Use $fof-mock to help me learn Foundations of Finance."

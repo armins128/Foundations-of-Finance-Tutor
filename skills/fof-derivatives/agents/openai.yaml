@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Derivatives"
+  short_description: "Tutor Foundations of Finance students in forwards,"
+  default_prompt: "Use $fof-derivatives to help me learn Foundations of Finance."

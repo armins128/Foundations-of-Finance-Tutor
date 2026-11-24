@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="420" viewBox="0 0 1440 420" role="img" aria-labelledby="title desc">
+<title id="title">Every answer leaves a trace</title>
+<desc id="desc">An excerpt from a student's Learning-Protokoll: a diagnostic bond question answered wrongly, a study plan for an exam on 3 February, an explanation after two hints, a newly generated Campus for Finance bond task solved independently, and a review three days later that shows the idea was retained.</desc>
+<rect width="1440" height="420" fill="#F3F2EE"/>
+
+<g font-family="Georgia, 'Times New Roman', serif" fill="#1E2A33" font-size="32">
+  <text x="80" y="120">Every answer</text>
+  <text x="80" y="162">leaves a trace</text>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#46535C">
+  <text x="80" y="214">Diagnose, plan, practise and review all</text>
+  <text x="80" y="240">write to one Learning-Protokoll. The next</text>
+  <text x="80" y="266">task is chosen from what it says.</text>
+</g>
+
+<g>
+  <rect x="520" y="48" width="840" height="324" rx="8" fill="#FCFBF8" stroke="#1E2A33" stroke-opacity="0.1"/>
+  <path d="M520 92H1360" stroke="#1E2A33" stroke-opacity="0.1"/>
+  <text x="548" y="76" font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="13" fill="#76818A">Learning-Protokoll/sessions/2027-01-12.md</text>
+
+  <g font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="13" fill="#9AA3AA">
+    <text x="548" y="132">09:02</text><text x="548" y="184">09:10</text><text x="548" y="236">09:14</text><text x="548" y="288">09:31</text><text x="548" y="340">15 Jan</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1E2A33">
+    <text x="620" y="132">Diagnose</text><text x="620" y="184">Plan</text><text x="620" y="236">Understand</text><text x="620" y="288">Practice</text><text x="620" y="340">Review</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#46535C">
+    <text x="736" y="132">Bond price, Q09: used the coupon rate as the yield</text>
+    <text x="736" y="184">Exam on 3 February, 4 hours a week: bonds first</text>
+    <text x="736" y="236">Yield vs coupon, explained after two hints</text>
+    <text x="736" y="288">New task, Campus for Finance bond: 1,054.4650</text>
+    <text x="736" y="340">Same idea, new numbers, no hints</text>
+  </g>
+  <g font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="13" fill="#76818A" text-anchor="end">
+    <text x="1332" y="132">B01 gap</text><text x="1332" y="184">plan v1</text><text x="1332" y="236">B01 helped</text><text x="1332" y="288">B02 independent</text>
+  </g>
+  <text x="1332" y="340" font-family="SFMono-Regular, Consolas, Menlo, monospace" font-size="13" fill="#2F6B4F" text-anchor="end">B01 retained</text>
+  <g stroke="#1E2A33" stroke-opacity="0.06">
+    <path d="M548 154H1332M548 206H1332M548 258H1332M548 310H1332"/>
+  </g>
+</g>
+</svg>

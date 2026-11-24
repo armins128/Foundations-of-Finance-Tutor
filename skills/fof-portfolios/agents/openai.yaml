@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Portfolios"
+  short_description: "Tutor Foundations of Finance students in efficient"
+  default_prompt: "Use $fof-portfolios to help me learn Foundations of Finance."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Practice"
+  short_description: "Practice Foundations of Finance with checked bank"
+  default_prompt: "Use $fof-practice to help me learn Foundations of Finance."

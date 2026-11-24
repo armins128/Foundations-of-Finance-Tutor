@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "foundations-of-finance",
+  "version": "0.2.0",
+  "description": "A self-contained Foundations of Finance learning companion with Socratic tutoring, adaptive diagnostics, practice and evidence-based progress.",
+  "author": {
+    "name": "Armin Samadi"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": [
+    "finance",
+    "education",
+    "socratic-tutoring",
+    "WHU"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Foundations of Finance",
+        "shortDescription": "Learn finance, one reasoning step at a time",
+        "longDescription": "A complete course companion with fourteen skills, adaptive study planning, a continuous learning protocol and course-grounded practice.",
+        "developerName": "Armin Samadi",
+        "category": "Education",
+        "defaultPrompt": [
+          "Help me find my Foundations of Finance starting point. Ask one question at a time.",
+          "Show my finance learning board and choose my next practice task."
+        ]
+      }
+    }
+  }
+}

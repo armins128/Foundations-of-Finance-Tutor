@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Review"
+  short_description: "Review previously learned Foundations of Finance concepts"
+  default_prompt: "Use $fof-review to help me learn Foundations of Finance."

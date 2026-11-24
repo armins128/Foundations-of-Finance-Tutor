@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Coach"
+  short_description: "Learn the bundled WHU Foundations of Finance curriculum"
+  default_prompt: "Use $fof-coach to help me learn Foundations of Finance."

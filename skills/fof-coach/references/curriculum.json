@@ -1,0 +1,949 @@
+[
+  {
+    "id": "V01",
+    "area": "value",
+    "title": "Timelines, rates and PV/FV",
+    "prerequisites": [],
+    "source": "01 Value",
+    "locator": "5-8",
+    "chapter_section": "1.1",
+    "question": "A payment arrives in two years. Why can you not add it directly to today's cash, and what happens to its PV when the positive discount rate rises?",
+    "answer": "Put both amounts at the same date; PV=FV/(1+r)^2. For a positive receipt, PV falls when r rises. Match the period and rate; t=0 is undiscounted."
+  },
+  {
+    "id": "V02",
+    "area": "value",
+    "title": "NPV and opportunity cost",
+    "prerequisites": [
+      "V01"
+    ],
+    "source": "01 Value",
+    "locator": "6-11",
+    "chapter_section": "1.2",
+    "question": "A project has NPV zero at its risk-appropriate required return. Has the investor earned nothing?",
+    "answer": "No. The investor earns the required return and creates zero additional value relative to that alternative. NPV is currency today, not a return percentage."
+  },
+  {
+    "id": "V03",
+    "area": "value",
+    "title": "Reservation price and terminal value",
+    "prerequisites": [
+      "V02"
+    ],
+    "source": "01 Value",
+    "locator": "7-11",
+    "chapter_section": "1.2",
+    "question": "A firm pays an operating cash flow and is sold at the end of year 4. How do you construct the last cash flow and the maximum purchase price today?",
+    "answer": "Include operating CF4 plus sale proceeds once at t=4, discount alongside earlier receipts, and set NPV=0 to solve the price. State how any terminal multiple is defined; market capitalization is not a cash flow."
+  },
+  {
+    "id": "V04",
+    "area": "value",
+    "title": "Annuities, CRF and loan amortization",
+    "prerequisites": [
+      "V01"
+    ],
+    "source": "01 Value",
+    "locator": "13-16",
+    "chapter_section": "1.3",
+    "question": "An equal annual loan installment stays constant. Why does its interest component fall, and how do you obtain the installment from the principal?",
+    "answer": "Payment=principal/AF=principal*CRF; interest is r times outstanding principal, so it falls as principal is repaid and amortization rises. End-of-period payments and a constant rate are assumed."
+  },
+  {
+    "id": "V05",
+    "area": "value",
+    "title": "Unequal lives and financing plans",
+    "prerequisites": [
+      "V04"
+    ],
+    "source": "01 Value",
+    "locator": "16-19",
+    "chapter_section": "1.3",
+    "question": "Two one-off projects have the same annual equivalent calculated over different lives. Does this prove equal value?",
+    "answer": "No. Use a common comparison horizon or an explicit repeatability/replacement assumption. With a shared positive CRF, ranking annual equivalents agrees with ranking NPVs; different horizons need not."
+  },
+  {
+    "id": "V06",
+    "area": "value",
+    "title": "Delayed and growing perpetuities",
+    "prerequisites": [
+      "V04"
+    ],
+    "source": "FORMULARY",
+    "locator": "1.4",
+    "chapter_section": "1.4",
+    "question": "A growing perpetuity has just paid C0. Which payment belongs in the numerator, and where is the value dated if its first future payment is at t=3?",
+    "answer": "C1=C0*(1+g), PV=C1/(r-g), r>g. For first payment at t=3 the perpetuity formula gives value at t=2; discount two more periods. Do not include an already paid cash flow."
+  },
+  {
+    "id": "V07",
+    "area": "value",
+    "title": "IRR, crossing profiles and multiple roots",
+    "prerequisites": [
+      "V02"
+    ],
+    "source": "01 Value",
+    "locator": "21-31",
+    "chapter_section": "1.5",
+    "question": "A project changes cash-flow sign twice and a spreadsheet reports one IRR. Can you conclude that the IRR is unique or prefer it to a higher-NPV project?",
+    "answer": "No. Multiple sign changes permit multiple roots but do not ensure them; a numerical solver may find only one. Compare NPVs at the relevant opportunity cost; IRR rankings can conflict through scale, timing and reinvestment assumptions."
+  },
+  {
+    "id": "V08",
+    "area": "value",
+    "title": "Equivalent accumulation factors",
+    "prerequisites": [
+      "V04"
+    ],
+    "source": "01 Value",
+    "locator": "19",
+    "chapter_section": "1.3",
+    "question": "How do you convert equal end-of-year deposits into terminal wealth and then recover the annual deposit for a target wealth?",
+    "answer": "FV=c*((1+r)^T-1)/r; divide target FV by this future-value annuity factor (the reciprocal is a sinking-fund or repartitioning factor). At r=0 the factor is T; distinguish it from AF and CRF."
+  },
+  {
+    "id": "B01",
+    "area": "bonds",
+    "title": "Coupon and zero-bond valuation",
+    "prerequisites": [
+      "V01"
+    ],
+    "source": "02 Bonds",
+    "locator": "3-6",
+    "chapter_section": "2.1",
+    "question": "A bond's annual coupon rate is 6% and its face value is 1000. What is the final cash flow, and why is the coupon rate not automatically the discount rate?",
+    "answer": "Annual coupon is 60; final cash flow is 1060. Discount using the required yield or appropriate spot rates. The contractual coupon rate and market yield serve different roles."
+  },
+  {
+    "id": "B02",
+    "area": "bonds",
+    "title": "Yield, term structure and premium/discount",
+    "prerequisites": [
+      "B01"
+    ],
+    "source": "02 Bonds",
+    "locator": "5-6",
+    "chapter_section": "2.2",
+    "question": "A fixed-coupon bond's market yield falls below its coupon rate. Explain its price relative to par and how you would value it with a non-flat spot curve.",
+    "answer": "It trades above par for a standard default-free bond on coupon dates. Discount each payment with its maturity-specific spot rate; a single yield to maturity is the rate reproducing the total price, not the entire spot curve."
+  },
+  {
+    "id": "B03",
+    "area": "bonds",
+    "title": "Coupon frequency and pull to par",
+    "prerequisites": [
+      "B01"
+    ],
+    "source": "02 Bonds",
+    "locator": "coupon conventions",
+    "chapter_section": "2.1",
+    "question": "A bond has semiannual coupons and an annual effective yield. How do you treat its rate and dates, and does a premium bond have a perfectly smooth declining observed price path?",
+    "answer": "Use times 0.5,1,... and discount by (1+y)^t, or half-year rate sqrt(1+y)-1. Under an unchanged yield, comparable ex-coupon prices converge to par; coupon payments cause jumps, so do not promise a smooth total price path."
+  },
+  {
+    "id": "B04",
+    "area": "bonds",
+    "title": "Macaulay duration",
+    "prerequisites": [
+      "B01"
+    ],
+    "source": "02 Bonds",
+    "locator": "8-11",
+    "chapter_section": "2.3",
+    "question": "Why does a positive-coupon bond generally have a shorter Macaulay duration than a zero bond of the same maturity?",
+    "answer": "Duration is the PV-weighted average cash-flow date. Coupons move some value to earlier dates; a zero bond has all its value at maturity and DMac=T. Weights use market PV, not nominal cash flows."
+  },
+  {
+    "id": "B05",
+    "area": "bonds",
+    "title": "Modified duration, convexity and repricing",
+    "prerequisites": [
+      "B04"
+    ],
+    "source": "02 Bonds",
+    "locator": "8-11",
+    "chapter_section": "2.4",
+    "question": "A task gives Macaulay duration and asks for the standard linear price response to an annual effective yield increase. Which duration do you use, and how does convexity affect the tangent estimate?",
+    "answer": "Use Dmod=DMac/(1+y) and deltaB/B approximately -Dmod*deltay; reprice every cash flow for the exact value. Positive-cash-flow noncallable bonds have convex price-yield curves; the tangent underestimates the new price for either direction. Use any explicitly prescribed legacy DMac approximation only with its label."
+  },
+  {
+    "id": "B06",
+    "area": "bonds",
+    "title": "Duration portfolios, immunization and rebalancing",
+    "prerequisites": [
+      "B04"
+    ],
+    "source": "FORMULARY",
+    "locator": "2.5",
+    "chapter_section": "2.6",
+    "question": "An asset portfolio has the same duration as a liability but a lower PV. Is the liability immunized?",
+    "answer": "No. Match PV as well as duration, using market-value weights. First-order protection assumes small parallel yield changes and requires rebalancing; it does not eliminate credit risk or nonparallel curve risk. Two-bond weight w=(Dtarget-D2)/(D1-D2)."
+  },
+  {
+    "id": "B07",
+    "area": "bonds",
+    "title": "Credit risk, ratings, distance to default and CDS",
+    "prerequisites": [
+      "B01"
+    ],
+    "source": "02 Bonds",
+    "locator": "3,13-21",
+    "chapter_section": "2.9",
+    "question": "A CDS spread widens while the risk-free curve is unchanged. What does that suggest, and does it directly equal the issuer's probability of default?",
+    "answer": "It suggests more expensive default protection and often greater perceived credit risk, tending to reduce risky bond prices. Ratings and distance to default are risk signals. Spread is not PD; recovery, liquidity and risk premia matter. CDS transfers specified credit-event risk and adds counterparty exposure."
+  },
+  {
+    "id": "N01",
+    "area": "portfolio",
+    "title": "Weak, semi-strong and strong EMH",
+    "prerequisites": [],
+    "source": "03 Neoclassics",
+    "locator": "2-6",
+    "chapter_section": "12.1",
+    "question": "A trader claims public news can systematically earn risk-adjusted excess returns after it is published. Which version of EMH does that challenge?",
+    "answer": "Semi-strong efficiency concerns all public information; weak concerns price history; strong also includes private information. One lucky realized gain is not evidence of systematic abnormal performance; efficiency does not mean prices never move or that returns are zero."
+  },
+  {
+    "id": "N02",
+    "area": "portfolio",
+    "title": "Rationality axioms and model assumptions",
+    "prerequisites": [],
+    "source": "03 Neoclassics",
+    "locator": "6",
+    "chapter_section": "12.2",
+    "question": "An investor prefers A to B and B to C but C to A. Which course axiom is violated, and does rationality by itself imply risk aversion?",
+    "answer": "Transitivity is violated. The course also names dominance, completeness and independence. Rational choice does not by itself require concavity or risk aversion; those are additional preference/model assumptions."
+  },
+  {
+    "id": "N03",
+    "area": "portfolio",
+    "title": "Expected utility, certainty equivalent and risk premium",
+    "prerequisites": [
+      "N02"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "8-13",
+    "chapter_section": "12.2",
+    "question": "Why is U(E[W]) generally different from E[U(W)], and how would you find a certainty equivalent for a stated increasing utility function?",
+    "answer": "Compute expected utility as sum p*U(W), then solve U(CE)=E[U(W)]. Risk premium=E[W]-CE. A concave utility gives CE below expected wealth for a nondegenerate risk; the utility domain and state probabilities must be valid."
+  },
+  {
+    "id": "N04",
+    "area": "portfolio",
+    "title": "Concave, linear and convex utility",
+    "prerequisites": [
+      "N03"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "12",
+    "chapter_section": "12.2",
+    "question": "A person prefers a risky lottery to its certain mean. What utility shape can represent this locally, and how does this differ from prospect theory?",
+    "answer": "Locally convex utility represents risk seeking; linear gives risk neutrality and concave risk aversion. Classical utility is typically over wealth; prospect theory evaluates changes relative to a reference point and may change curvature between gains and losses."
+  },
+  {
+    "id": "N05",
+    "area": "portfolio",
+    "title": "Mean-variance utility and indifference curves",
+    "prerequisites": [
+      "N04"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "9-11,28-30",
+    "chapter_section": "12.3",
+    "question": "In the course model U=mu-b*sigma^2 with b positive, what does greater b do to the portfolio choice and the shape of an indifference curve?",
+    "answer": "It increases the penalty on variance. At fixed U, mu=U+b*sigma^2 is an upward, convex curve in a sigma/mu diagram. The optimum is feasible tangency when interior; do not equate a convex indifference curve with a convex wealth utility function."
+  },
+  {
+    "id": "P01",
+    "area": "portfolio",
+    "title": "Realized returns, mean and population moments",
+    "prerequisites": [],
+    "source": "FORMULARY",
+    "locator": "3.1",
+    "chapter_section": "3.1",
+    "question": "You observe four equally weighted returns. Why would dividing squared deviations by three violate this course's stated convention?",
+    "answer": "The course calculation uses population moments with divisor n=4; sqrt of variance is volatility. Use (P1-P0+dividend)/P0 for a holding-period return. An unbiased statistical sample estimator is a different task."
+  },
+  {
+    "id": "P02",
+    "area": "portfolio",
+    "title": "Probability-weighted state moments",
+    "prerequisites": [
+      "P01"
+    ],
+    "source": "2025 REVIEW",
+    "locator": "14-21",
+    "chapter_section": "12.4",
+    "question": "Three economic states have unequal probabilities. Should you still average their returns by dividing by three?",
+    "answer": "No. Use mu=sum p*R and variance=sum p*(R-mu)^2; sum probabilities to one. Covariance uses the same probability weights. Divisor n applies only to equally weighted observations or states."
+  },
+  {
+    "id": "P03",
+    "area": "portfolio",
+    "title": "Covariance and correlation",
+    "prerequisites": [
+      "P01"
+    ],
+    "source": "FORMULARY",
+    "locator": "3.2",
+    "chapter_section": "3.2",
+    "question": "Can a covariance of 0.02 be compared directly to a correlation of 0.8? What happens to correlation if you express returns in percentage points?",
+    "answer": "No. Covariance has squared return units and changes with scaling; correlation=cov/(sigma1*sigma2) is dimensionless and unchanged by positive rescaling. If either volatility is zero, correlation is undefined."
+  },
+  {
+    "id": "P04",
+    "area": "portfolio",
+    "title": "Weights, short sales and portfolio means",
+    "prerequisites": [
+      "P01"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "20",
+    "chapter_section": "3.3",
+    "question": "A portfolio invests 120% in a stock and minus 20% in cash. Is its total investment necessarily 140%?",
+    "answer": "Net weights sum to 100%; gross absolute exposure is 140%. The negative cash weight represents borrowing. Expected portfolio return is the signed weighted mean; long-only restrictions would exclude this portfolio."
+  },
+  {
+    "id": "P05",
+    "area": "portfolio",
+    "title": "Portfolio variance and volatility",
+    "prerequisites": [
+      "P03",
+      "P04"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "21-22",
+    "chapter_section": "3.4",
+    "question": "Why is portfolio volatility generally not the weighted average of individual volatilities?",
+    "answer": "Co-movement enters variance: w1^2*sigma1^2+w2^2*sigma2^2+2*w1*w2*cov12; then take sqrt. A weighted volatility expression only works in particular cases, such as long-only perfectly positively correlated assets."
+  },
+  {
+    "id": "P06",
+    "area": "portfolio",
+    "title": "Diversification and correlation extremes",
+    "prerequisites": [
+      "P05"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "18-19",
+    "chapter_section": "3.5",
+    "question": "Can negatively correlated assets always produce zero risk with any positive weights?",
+    "answer": "No. At rho=-1, zero risk needs w1*sigma1=w2*sigma2 with weights summing to one; partial negative correlation usually leaves risk. Diversification removes idiosyncratic exposure, not all aggregate risk."
+  },
+  {
+    "id": "P07",
+    "area": "portfolio",
+    "title": "Minimum-variance weights and boundaries",
+    "prerequisites": [
+      "P05"
+    ],
+    "source": "FORMULARY",
+    "locator": "3.6",
+    "chapter_section": "3.6",
+    "question": "An unconstrained two-asset MVP formula returns a negative weight. What changes when short selling is prohibited?",
+    "answer": "For a nondegenerate two-asset problem the long-only minimum is the constrained boundary if the interior unconstrained solution is infeasible. Use w1=(var2-cov)/(var1+var2-2cov), w2=1-w1; if the denominator is zero the generic formula is not usable."
+  },
+  {
+    "id": "P08",
+    "area": "portfolio",
+    "title": "Efficient frontier, optimization and constraints",
+    "prerequisites": [
+      "P07",
+      "N05"
+    ],
+    "source": "2025 NEOCLASSICS",
+    "locator": "27-37",
+    "chapter_section": "12.3",
+    "question": "Can adding a 20% cap per stock improve the best attainable mean-variance frontier using the same assets and data?",
+    "answer": "Restricting the feasible set cannot improve the mathematical optimum; it can leave it unchanged or worsen it. Minimize variance for a target mean with sum weights=1 and stated constraints. Efficient means no feasible portfolio has higher return at equal risk or lower risk at equal return; only the efficient branch is relevant."
+  },
+  {
+    "id": "C01",
+    "area": "capm",
+    "title": "Beta as covariance ratio and regression slope",
+    "prerequisites": [
+      "P03"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "41-43",
+    "chapter_section": "4.2",
+    "question": "A stock has beta zero. Does that imply zero volatility?",
+    "answer": "No. Beta=cov(stock,market)/var(market)=rho*sigma_stock/sigma_market measures systematic co-movement. An asset can have beta zero and positive residual volatility. Beta may be negative or exceed one."
+  },
+  {
+    "id": "C02",
+    "area": "capm",
+    "title": "Systematic and residual variance",
+    "prerequisites": [
+      "C01"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "39-43",
+    "chapter_section": "12.5",
+    "question": "How do you split a stock's total variance into market-related and residual components in a one-market regression?",
+    "answer": "With residual uncorrelated with market, systematic variance=beta^2*var_market=rho^2*var_stock; residual variance=(1-rho^2)*var_stock. Volatilities are square roots and do not add. Systematic volatility is abs(beta)*sigma_market, also abs(rho)*sigma_stock."
+  },
+  {
+    "id": "C03",
+    "area": "capm",
+    "title": "CAPM expected return and assumptions",
+    "prerequisites": [
+      "C01"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "44-45",
+    "chapter_section": "4.4",
+    "question": "Why does CAPM reward beta rather than all of a stock's volatility?",
+    "answer": "Diversified investors can remove idiosyncratic risk, so equilibrium rewards systematic exposure: E[R]=rf+beta*(muM-rf). This is an expected required return under the model, not a guaranteed realized payoff."
+  },
+  {
+    "id": "C04",
+    "area": "capm",
+    "title": "SML, benchmark alpha and valuation",
+    "prerequisites": [
+      "C03"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "44-46",
+    "chapter_section": "4.5",
+    "question": "A forecast return lies above the SML. How do you interpret this, and can one realized high return prove mispricing?",
+    "answer": "Forecast alpha=forecast mean minus CAPM required return is positive; under the assumptions the price is low relative to forecast cash flows. A realized return difference alone may be luck and is not proof of expected alpha. A raw-return regression intercept is not automatically Jensen's alpha."
+  },
+  {
+    "id": "C05",
+    "area": "capm",
+    "title": "CML, market price of risk and leverage",
+    "prerequisites": [
+      "C03",
+      "P08"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "27,33-38",
+    "chapter_section": "4.3",
+    "question": "What belongs on the horizontal axes of the CML and SML, and which assets lie on each line?",
+    "answer": "CML uses total volatility and efficient market-plus-risk-free portfolios; slope=(muM-rf)/sigmaM. SML uses beta and applies to all correctly priced assets under CAPM. Along the positive market branch sigmaP=abs(wM)*sigmaM; leveraged wM>1 requires borrowing."
+  },
+  {
+    "id": "C06",
+    "area": "capm",
+    "title": "Beta matching and beta-neutral hedging",
+    "prerequisites": [
+      "C01",
+      "C05"
+    ],
+    "source": "FORMULARY",
+    "locator": "4.6",
+    "chapter_section": "4.6",
+    "question": "A stock has beta 1.4. Does investing 140% in the market and borrowing 40% perfectly replicate the stock's every payoff?",
+    "answer": "It matches beta and CAPM expected return, not residual risk or every state payoff. For a portfolio hedge solve the budget constraint and total beta=0 with all signed weights and financing specified; do not confuse a beta-neutral position with a risk-free asset."
+  },
+  {
+    "id": "C07",
+    "area": "capm",
+    "title": "Cost of equity and risk-adjusted PV",
+    "prerequisites": [
+      "C03",
+      "V02"
+    ],
+    "source": "03 Neoclassics",
+    "locator": "47",
+    "chapter_section": "4.7",
+    "question": "Why should a risky equity payoff not automatically be discounted at the risk-free rate?",
+    "answer": "Its required return includes systematic risk compensation; use rf+beta*(muM-rf) for a compatible equity payoff. Match nominal/real, currency, horizon and cash-flow risk. Do not introduce a full WACC or corporate financing model as assumed FoF material."
+  },
+  {
+    "id": "D01",
+    "area": "derivatives",
+    "title": "Forwards versus futures, price versus value",
+    "prerequisites": [],
+    "source": "04 Derivatives",
+    "locator": "3-7",
+    "chapter_section": "5.2",
+    "question": "A fairly priced forward has value zero at inception. Does that mean its delivery price is zero?",
+    "answer": "No. Delivery price is the agreed future exchange price; value is today's value of the contractual position. At inception fair delivery price makes value zero. Futures are standardized and marked to market; forwards are typically OTC with counterparty exposure."
+  },
+  {
+    "id": "D02",
+    "area": "derivatives",
+    "title": "Cost of carry and arbitrage directions",
+    "prerequisites": [
+      "D01",
+      "V01"
+    ],
+    "source": "04 Derivatives",
+    "locator": "6-8",
+    "chapter_section": "5.3",
+    "question": "A no-payout asset's quoted forward price exceeds S0*(1+r)^T. Which positions lock in arbitrage in a frictionless market?",
+    "answer": "Borrow S0, buy the asset and short the overpriced forward. Deliver asset for F at T and repay S0*(1+r)^T; difference is locked in. Reverse cash-and-carry applies below fair price if shorting and lending are feasible. Include all cash flows, not just a price comparison."
+  },
+  {
+    "id": "D03",
+    "area": "derivatives",
+    "title": "Hedging, FX forwards and FRAs",
+    "prerequisites": [
+      "D01"
+    ],
+    "source": "04 Derivatives",
+    "locator": "8-11",
+    "chapter_section": "5.8",
+    "question": "A euro-based firm must repay dollars in three months. What must an exchange-rate hedge secure, and what would a future borrower hedge using an FRA?",
+    "answer": "Secure buying the required dollars for a predetermined euro cost, with quote direction explicit. A future borrower needs protection paying off when borrowing rates rise; FRA label conventions vary, so specify cash-flow direction. Hedging reduces an existing exposure; naked positions can speculate."
+  },
+  {
+    "id": "D04",
+    "area": "derivatives",
+    "title": "Commodity storage, convenience and backwardation",
+    "prerequisites": [
+      "D02"
+    ],
+    "source": "04 Derivatives",
+    "locator": "8-10",
+    "chapter_section": "5.8",
+    "question": "A commodity futures price is below its spot price. Does that always imply an executable reverse cash-and-carry arbitrage?",
+    "answer": "No. Storage costs, convenience yield, availability, short-sale constraints and contract details matter. Backwardation is futures below spot in this comparison; a financial no-payout formula cannot be blindly imposed on a physical commodity."
+  },
+  {
+    "id": "D05",
+    "area": "derivatives",
+    "title": "Four option positions, payoff and profit",
+    "prerequisites": [
+      "V01"
+    ],
+    "source": "04 Derivatives",
+    "locator": "13-16",
+    "chapter_section": "5.5",
+    "question": "A long put expires out of the money. Is the holder's profit zero?",
+    "answer": "Its payoff is zero, but premium paid creates a loss. Long call max(ST-X,0), long put max(X-ST,0); shorts have opposite payoffs and receive premium. Define whether profit subtracts the initial premium directly or its financed terminal cost."
+  },
+  {
+    "id": "D06",
+    "area": "derivatives",
+    "title": "Put-call parity and synthetic positions",
+    "prerequisites": [
+      "D05",
+      "V01"
+    ],
+    "source": "04 Derivatives",
+    "locator": "17,26",
+    "chapter_section": "5.6",
+    "question": "For European options on a no-dividend stock with the same strike and maturity, why must S0+P equal C+PV(X)?",
+    "answer": "Stock plus put and call plus a bond paying X have identical terminal payoff max(ST,X). Law of one price equates their costs. Rearrange for synthetic stock/call/put; mismatched maturities or dividends require adjustment, and general American equality is not assumed."
+  },
+  {
+    "id": "D07",
+    "area": "derivatives",
+    "title": "One-period binomial replication and pricing",
+    "prerequisites": [
+      "D06"
+    ],
+    "source": "REVIEW",
+    "locator": "16-17",
+    "chapter_section": "5.11",
+    "question": "In a binomial model, why do the actual up/down probabilities not enter a replicating call's no-arbitrage price?",
+    "answer": "Solve delta=(Cu-Cd)/(Su-Sd), B0=(Cd-delta*Sd)/(1+r), C0=delta*S0+B0; identical state cash flows fix cost. Risk-neutral q=((1+r)-d)/(u-d) is a pricing device, not an estimated physical probability; require d<1+r<u."
+  },
+  {
+    "id": "D08",
+    "area": "derivatives",
+    "title": "Protective puts, collars and option combinations",
+    "prerequisites": [
+      "D05",
+      "D06"
+    ],
+    "source": "FORMULARY",
+    "locator": "5.9",
+    "chapter_section": "5.9",
+    "question": "A collar is long stock, long a lower-strike put and short a higher-strike call. What happens below, between and above its strikes?",
+    "answer": "Terminal payoff is Kput below the put strike, ST between strikes, and Kcall above the call strike. Subtract net initial cost under the stated profit convention. The floor and cap trade protection for upside; premium need not be zero."
+  },
+  {
+    "id": "D09",
+    "area": "derivatives",
+    "title": "Payoff construction and capital-protected products",
+    "prerequisites": [
+      "D08"
+    ],
+    "source": "FORMULARY",
+    "locator": "5.9",
+    "chapter_section": "5.9",
+    "question": "How can a zero bond and calls form a capital-protected participation product, and what determines its participation rate?",
+    "answer": "A zero bond secures the promised nominal maturity floor; remaining initial budget buys calls. Participation is option budget divided by call cost, adjusted for units. Credit risk, fees and maturity matter. Construct piecewise slopes and breakpoints to analyze spreads, butterflies, straddles, strangles, covered calls and synthetic positions."
+  },
+  {
+    "id": "X01",
+    "area": "derivatives",
+    "title": "FX quote direction, absolute PPP and Big Mac index",
+    "prerequisites": [],
+    "source": "04 Derivatives",
+    "locator": "20-23",
+    "chapter_section": "12.6",
+    "question": "A basket costs 18 domestic units or 6 foreign units. What is its absolute PPP quote in domestic per foreign units, and why may observed goods-price gaps persist?",
+    "answer": "PPP quote=18/6=3 domestic per foreign; reciprocal is 1/3 foreign per domestic. Goods are not frictionless securities: taxes, labor costs, transport, trade barriers and nontradability impede arbitrage. Compare converted prices with a stated denominator for overvaluation."
+  },
+  {
+    "id": "X02",
+    "area": "derivatives",
+    "title": "Relative PPP and currency changes",
+    "prerequisites": [
+      "X01"
+    ],
+    "source": "04 Derivatives",
+    "locator": "20",
+    "chapter_section": "12.6",
+    "question": "With the quote domestic currency per foreign unit, how does higher domestic inflation affect the PPP-predicted future quote?",
+    "answer": "S1/S0=(1+pi_dom)/(1+pi_for), approximately deltaS/S=pi_dom-pi_for. Higher domestic inflation raises the quote, meaning domestic depreciation. Relative PPP is a model relation, not a guaranteed short-run forecast."
+  },
+  {
+    "id": "X03",
+    "area": "derivatives",
+    "title": "Covered interest parity",
+    "prerequisites": [
+      "X01",
+      "D02"
+    ],
+    "source": "04 Derivatives",
+    "locator": "8-9,20",
+    "chapter_section": "12.6",
+    "question": "For a domestic-per-foreign quote, which interest rate belongs in the numerator of the covered forward-rate relation?",
+    "answer": "F=S0*(1+r_dom)^T/(1+r_for)^T under compatible compounding and frictionless borrowing/lending. Compare two currency investment paths and a forward hedge to fix direction. Reversing the FX quote inverts the relation."
+  },
+  {
+    "id": "X04",
+    "area": "derivatives",
+    "title": "Fisher effect, IFE and forward expectations",
+    "prerequisites": [
+      "X02",
+      "X03"
+    ],
+    "source": "04 Derivatives",
+    "locator": "20",
+    "chapter_section": "12.6",
+    "question": "Does covered interest parity prove that a forward exchange rate is an unbiased forecast of the future spot rate?",
+    "answer": "No. Covered parity is a no-arbitrage relation using an actual hedge. Fisher links nominal, real rates and expected inflation; international Fisher and uncovered parity add expectations/risk assumptions. Unbiased-forward theory is an expectations hypothesis, not a consequence of covered arbitrage alone."
+  },
+  {
+    "id": "K01",
+    "area": "crypto",
+    "title": "Ledgers, double spending and intermediaries",
+    "prerequisites": [],
+    "source": "05 Crypto",
+    "locator": "3-11",
+    "chapter_section": "6.1",
+    "question": "If everyone can copy a digital record, how can a blockchain help prevent the same unit from being spent twice?",
+    "answer": "Network rules validate transfers and agree an ordered shared ledger so conflicting histories cannot both be accepted under its security assumptions. Copies alone do not establish validity. A blockchain changes trust and coordination; it does not eliminate all intermediaries or all possible attacks."
+  },
+  {
+    "id": "K02",
+    "area": "crypto",
+    "title": "Hashes, signatures, addresses and public history",
+    "prerequisites": [
+      "K01"
+    ],
+    "source": "05 Crypto",
+    "locator": "4-11,13",
+    "chapter_section": "6.2",
+    "question": "Are a transaction hash, an address and a private key interchangeable, and does hashing make a public ledger anonymous?",
+    "answer": "No. A hash fingerprints data; an address identifies a destination under protocol rules; a private key authorizes signatures and must remain secret. Public histories are often pseudonymous and traceable, not guaranteed anonymous. Hashing is not encryption or proof of the truth of input data."
+  },
+  {
+    "id": "K03",
+    "area": "crypto",
+    "title": "PoW, nonces, difficulty and energy",
+    "prerequisites": [
+      "K02"
+    ],
+    "source": "05 Crypto",
+    "locator": "13-16",
+    "chapter_section": "6.3",
+    "question": "A miner changes a nonce. What must the resulting hash satisfy, and does one more required leading binary zero merely add one trial?",
+    "answer": "Hash must satisfy the current target. One extra binary zero approximately doubles expected trials under the uniform-hash model; a hexadecimal zero multiplies by 16. Verification is cheap relative to search. Difficulty adjusts; a historical fixed zero count is not a permanent rule."
+  },
+  {
+    "id": "K04",
+    "area": "crypto",
+    "title": "PoS, validators and incentives",
+    "prerequisites": [
+      "K03"
+    ],
+    "source": "05 Crypto",
+    "locator": "17,19-20",
+    "chapter_section": "6.3",
+    "question": "What replaces computational competition in proof of stake, and does the largest stake simply own every next block?",
+    "answer": "Validators commit stake; protocol selection, validation and penalties create incentives. Stake weight influences participation without guaranteeing every block. PoS generally avoids PoW search energy; the Ethereum transition is a historical course example, not evidence that staking is risk free."
+  },
+  {
+    "id": "K05",
+    "area": "crypto",
+    "title": "Bitcoin issuance, halvings and value",
+    "prerequisites": [
+      "K03"
+    ],
+    "source": "05 Crypto",
+    "locator": "18-19",
+    "chapter_section": "6.5",
+    "question": "Does Bitcoin's capped issuance schedule guarantee its market price, and what happens to new issuance at a halving?",
+    "answer": "No. A halving cuts the block subsidy, not existing balances; issuance accumulates toward the protocol cap of roughly 21 million. Demand and risks still determine price. Do not claim a historical block reward, Ether supply or staking return is today's value."
+  },
+  {
+    "id": "K06",
+    "area": "crypto",
+    "title": "PoH, ordering and time bounds",
+    "prerequisites": [
+      "K02",
+      "K04"
+    ],
+    "source": "05 Crypto",
+    "locator": "22-28",
+    "chapter_section": "6.3",
+    "question": "Why is Solana's proof-of-history sequence described as a clock, and why is it not by itself the entire consensus mechanism?",
+    "answer": "Sequential hashing and event insertion provide verifiable ordering and time bounds; later references prove earlier information existed before them. Agreement about valid state still needs consensus/validators. Distinguish a lower from an upper time bound; newspaper analogies do not prove an absolute civil-clock timestamp."
+  },
+  {
+    "id": "K07",
+    "area": "crypto",
+    "title": "Smart contracts, gas and cryptoasset risks",
+    "prerequisites": [
+      "K01"
+    ],
+    "source": "05 Crypto",
+    "locator": "37",
+    "chapter_section": "6.4",
+    "question": "A smart contract executes exactly as coded. Does that guarantee the economic agreement is safe or that its external input is true?",
+    "answer": "No. Code may have bugs; oracle inputs, keys, protocol incentives and counterparties can fail. Gas measures execution resource use. Distinguish a native token, a claim on cash flows, and governance/use rights before trying to value an asset."
+  },
+  {
+    "id": "K08",
+    "area": "crypto",
+    "title": "NFTs, rights, Web3 and metaverse",
+    "prerequisites": [
+      "K07"
+    ],
+    "source": "05 Crypto",
+    "locator": "30-37",
+    "chapter_section": "6.4",
+    "question": "Owning a unique NFT linked to an image proves what, and what rights do you still need to check?",
+    "answer": "It identifies control of a nonfungible token under the chain rules, not automatic copyright, exclusive image access, guaranteed authenticity or price appreciation. Check actual license, access and economic rights. Art, games, memberships, domains and virtual land are use cases, not guaranteed investments."
+  },
+  {
+    "id": "H01",
+    "area": "behavioral",
+    "title": "Belief biases versus preference biases",
+    "prerequisites": [],
+    "source": "06 Behavioral",
+    "locator": "5,51-52",
+    "chapter_section": "7.1",
+    "question": "Why is a nonclassical preference not automatically the same thing as a factual reasoning error?",
+    "answer": "Belief biases distort information or inference relative to evidence; preference biases may reflect reference dependence or different utility. Identify the mechanism and evidence rather than declaring every departure from mean-variance optimization irrational."
+  },
+  {
+    "id": "H02",
+    "area": "behavioral",
+    "title": "Attention and change blindness",
+    "prerequisites": [
+      "H01"
+    ],
+    "source": "06 Behavioral",
+    "locator": "5-10",
+    "chapter_section": "12.7",
+    "question": "An analyst counts trading alerts so intently that they miss a large change in the firm's debt. Which information-selection problem is illustrated?",
+    "answer": "Limited attention/inattentional blindness: focus hides other relevant information; change blindness concerns missed changes. Explain which information was ignored; no external video or voting service is needed to demonstrate the mechanism."
+  },
+  {
+    "id": "H03",
+    "area": "behavioral",
+    "title": "Confirmation, selective perception and perseverance",
+    "prerequisites": [
+      "H01"
+    ],
+    "source": "06 Behavioral",
+    "locator": "5,9-10",
+    "chapter_section": "12.7",
+    "question": "An investor seeks only favorable reports and keeps a view after its original evidence is discredited. Which two mechanisms should you distinguish?",
+    "answer": "Confirmation bias concerns searching/interpreting evidence to support prior beliefs; belief perseverance concerns persistence after support is removed. Selective perception also reflects experience shaping what is noticed. More than one bias can apply; identify behavior rather than guessing one label."
+  },
+  {
+    "id": "H04",
+    "area": "behavioral",
+    "title": "Availability and salience",
+    "prerequisites": [
+      "H02"
+    ],
+    "source": "06 Behavioral",
+    "locator": "11-12,21",
+    "chapter_section": "7.2",
+    "question": "A vivid viral loss story makes an investor believe all bonds default frequently. What additional evidence would improve that inference?",
+    "answer": "Availability/salience makes memorable examples dominate judged frequency. Seek representative base-rate and issuer-risk data; vividness is not probability. Contrast recall ease with representativeness based on similarity."
+  },
+  {
+    "id": "H05",
+    "area": "behavioral",
+    "title": "Representativeness, base rates and conjunction",
+    "prerequisites": [
+      "H01"
+    ],
+    "source": "06 Behavioral",
+    "locator": "13-14",
+    "chapter_section": "12.7",
+    "question": "A description fits a successful founder stereotype. Can being a successful founder AND a marathon runner be more probable than being a successful founder?",
+    "answer": "No. A conjunction is a subset and cannot have higher probability than one of its components. Similarity can cause neglect of base rates or extrapolation of past returns. A convincing story alone is not a probability model."
+  },
+  {
+    "id": "H06",
+    "area": "behavioral",
+    "title": "Conservatism and conditional information",
+    "prerequisites": [
+      "H05"
+    ],
+    "source": "06 Behavioral",
+    "locator": "15-16",
+    "chapter_section": "12.7",
+    "question": "In the standard three-door game, an informed host always opens a goat door and offers a switch. Why does switching win two-thirds of the time?",
+    "answer": "Initial choice has 1/3 chance; the other two doors jointly have 2/3. The informed forced reveal concentrates that 2/3 on the remaining door. State the host protocol; a random uninformed reveal is different. Conservatism underweights diagnostic new information."
+  },
+  {
+    "id": "H07",
+    "area": "behavioral",
+    "title": "Anchoring and framing",
+    "prerequisites": [
+      "H01"
+    ],
+    "source": "06 Behavioral",
+    "locator": "5,17-19",
+    "chapter_section": "12.7",
+    "question": "One offer is described as 90% survival and another as 10% mortality for the same event. Why should equivalent evidence not change the choice, and what differs from anchoring?",
+    "answer": "The frames encode identical probabilities; a changed choice illustrates framing. Anchoring means judgments stay too near an initial number despite inadequate relevance. Distinguish a legitimate preference over outcomes from presentation effects."
+  },
+  {
+    "id": "H08",
+    "area": "behavioral",
+    "title": "Probability matching",
+    "prerequisites": [
+      "H05"
+    ],
+    "source": "06 Behavioral",
+    "locator": "5",
+    "chapter_section": "12.7",
+    "question": "An independent game pays the same amount for a correct red/blue guess; red occurs with probability 0.7. Why does guessing red only 70% of the time underperform always guessing red?",
+    "answer": "Matching yields 0.7*0.7+0.3*0.3=0.58 accuracy; always red gives 0.7 under the stated independence and fixed probabilities. This is an expected-value comparison, not a diversification problem."
+  },
+  {
+    "id": "H09",
+    "area": "behavioral",
+    "title": "Overconfidence, optimism and hindsight",
+    "prerequisites": [
+      "H01"
+    ],
+    "source": "06 Behavioral",
+    "locator": "5,18",
+    "chapter_section": "12.7",
+    "question": "An analyst's 90% intervals cover only half of the outcomes, their forecasts are systematically too favorable, and afterward they say they knew the result. Which distinctions matter?",
+    "answer": "Overconfidence/miscalibration concerns unjustified precision, optimism concerns directionally favorable beliefs, hindsight concerns seeing past uncertainty as predictable after learning outcomes. Optional self-confidence is not evidence of competence."
+  },
+  {
+    "id": "H10",
+    "area": "behavioral",
+    "title": "Herding, social amplification and AI biases",
+    "prerequisites": [
+      "H04"
+    ],
+    "source": "06 Behavioral",
+    "locator": "20-21,26-32",
+    "chapter_section": "12.7",
+    "question": "A trader trusts an algorithm despite contrary evidence, then rejects all algorithms after one visible failure. Identify both mechanisms and explain how an online echo chamber can amplify them.",
+    "answer": "Automation bias then algorithm aversion. Echo chambers amplify selective evidence, overconfidence, salience and herding. Data anchoring and confirmation during model tuning can embed human biases in automated systems; automation does not establish rationality."
+  },
+  {
+    "id": "H11",
+    "area": "behavioral",
+    "title": "Mental accounting",
+    "prerequisites": [
+      "H01"
+    ],
+    "source": "06 Behavioral",
+    "locator": "5,42",
+    "chapter_section": "7.4",
+    "question": "A person pays high interest on a credit card while keeping a separate low-yield holiday pot untouched. What must you examine before labeling this mental accounting?",
+    "answer": "Money is fungible, but separate mental accounts may prevent evaluating the combined opportunity cost. Check real constraints, liquidity and fees first; a dedicated account can also serve an intentional budgeting purpose."
+  },
+  {
+    "id": "H12",
+    "area": "behavioral",
+    "title": "Disposition, endowment and sunk costs",
+    "prerequisites": [
+      "H11"
+    ],
+    "source": "06 Behavioral",
+    "locator": "5,52",
+    "chapter_section": "12.7",
+    "question": "An investor refuses to sell a losing share solely to avoid realizing the loss, and funds a bad project solely because much was already spent. What differs between the two errors?",
+    "answer": "Disposition concerns holding losers/selling winners around a reference purchase price; sunk-cost fallacy bases forward decisions on unrecoverable past spending. Endowment effect is higher valuation because of ownership. Evaluate future incremental value and any actual tax/transaction constraints."
+  },
+  {
+    "id": "H13",
+    "area": "behavioral",
+    "title": "House-money effect and home bias",
+    "prerequisites": [
+      "H11"
+    ],
+    "source": "06 Behavioral",
+    "locator": "5",
+    "chapter_section": "12.7",
+    "question": "A student takes more risk with trading gains than with salary and buys almost only domestic stocks. What are the distinct mechanisms and caveats?",
+    "answer": "House-money effect treats gains as less valuable/fungible; home bias favors familiar domestic assets and can reduce diversification. Domestic exposure is not proof of irrationality if information, liability matching, costs or constraints justify it."
+  },
+  {
+    "id": "H14",
+    "area": "behavioral",
+    "title": "Fairness, regret and myopic loss aversion",
+    "prerequisites": [
+      "H01"
+    ],
+    "source": "06 Behavioral",
+    "locator": "5",
+    "chapter_section": "12.7",
+    "question": "A person rejects an unequal positive offer, avoids action to avoid blame, and checks a long-horizon portfolio every hour. How can these behaviors reflect different preferences or biases?",
+    "answer": "Fairness values the allocation process; regret aversion anticipates feeling responsible for bad outcomes; myopic loss aversion combines loss sensitivity with frequent short-horizon evaluation. Do not treat fairness as a simple arithmetic mistake."
+  },
+  {
+    "id": "H15",
+    "area": "behavioral",
+    "title": "Prospect theory and reference-dependent risk",
+    "prerequisites": [
+      "H01",
+      "N04"
+    ],
+    "source": "06 Behavioral",
+    "locator": "34-41",
+    "chapter_section": "7.5",
+    "question": "The same final wealth can feel like a gain to one investor and a loss to another. How can this change risk choices in prospect theory?",
+    "answer": "Evaluation is relative to a reference point. Typical value is concave in gains, convex in losses and steeper for losses; probability weighting differs from objective probabilities. Loss-domain risk seeking is a tendency under assumptions, not a universal rule for every loss lottery."
+  },
+  {
+    "id": "H16",
+    "area": "behavioral",
+    "title": "Market anomalies and limits of inference",
+    "prerequisites": [
+      "N01",
+      "H10"
+    ],
+    "source": "06 Behavioral",
+    "locator": "23-32",
+    "chapter_section": "12.8",
+    "question": "A historical chart shows Sell in May profits. What must be checked before claiming a usable market-beating rule?",
+    "answer": "Data snooping, sample period, out-of-sample evidence, transaction costs and risk adjustment. The course also discusses weekday effects, size effects, Tesla and meme-stock narratives. Historical observations and rule-based risk control do not guarantee future excess returns."
+  },
+  {
+    "id": "H17",
+    "area": "behavioral",
+    "title": "Risk elicitation and structured payoffs",
+    "prerequisites": [
+      "H15",
+      "D08"
+    ],
+    "source": "06 Behavioral",
+    "locator": "42-48,52",
+    "chapter_section": "7.6",
+    "question": "An investor wants a floor below a reference point and accepts an upside cap. How can a collar express that preference, and what does the questionnaire fail to prove?",
+    "answer": "Map stated reference levels to put/call strikes, then calculate the actual payoff, costs and distribution. A questionnaire elicits preferences; it does not establish a uniquely optimal product, eliminate issuer risk or justify a personal investment recommendation."
+  }
+]

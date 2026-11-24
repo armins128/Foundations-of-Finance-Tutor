@@ -1,0 +1,18 @@
+{
+  "name": "foundations-of-finance-tutor",
+  "owner": {
+    "name": "Armin Samadi"
+  },
+  "metadata": {
+    "description": "Marketplace for the Foundations of Finance learning companion"
+  },
+  "plugins": [
+    {
+      "name": "foundations-of-finance",
+      "source": "./",
+      "description": "A self-contained Foundations of Finance learning companion with Socratic tutoring, adaptive diagnostics, practice and evidence-based progress.",
+      "version": "0.2.0",
+      "license": "CC-BY-NC-SA-4.0"
+    }
+  ]
+}

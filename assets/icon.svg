@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Foundations of Finance">
+<rect width="256" height="256" rx="56" fill="#172A3A"/>
+<path d="M56 186L104 138L140 160L200 84" fill="none" stroke="#F4F0E7" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="200" cy="84" r="16" fill="#BF5738"/>
+<path d="M56 206H200" stroke="#546356" stroke-width="8" stroke-linecap="round"/>
+</svg>

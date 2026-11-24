@@ -1,0 +1,4 @@
+interface:
+  display_name: "FoF Behavioral"
+  short_description: "Tutor Foundations of Finance students in behavioral"
+  default_prompt: "Use $fof-behavioral to help me learn Foundations of Finance."

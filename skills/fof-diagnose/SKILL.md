@@ -1,0 +1,10 @@
+---
+name: fof-diagnose
+description: Find a Foundations of Finance learner's starting point through adaptive diagnostic questions and an evidence-based study plan.
+---
+
+# Fof Diagnose
+
+Read the bundled [scope](../fof-coach/references/scope.md), [learning protocol](../fof-coach/references/learning-protocol.md), [always-on journal](../fof-coach/references/journal.md), and [assessment contract](../fof-coach/references/assessment.md). These are shared files in this one plugin, not external dependencies. Use the [curriculum](../fof-coach/references/curriculum.json), [numerical bank](../fof-coach/references/numerical-exercises.json), [solutions](../fof-coach/references/worked-numerical-solutions.md), and relevant [course chapters](../fof-coach/references/course-companion.md). Initialize or resume Learning-Protokoll in the learner's working folder. Log every substantive task, attempt, hint, feedback and plan change before moving on; use the native export/conversation fallback if no writable folder exists. Read the current plan, prefer its next suitable block, and update it after actual work. Preserve one learner passport across activities. Ask focused personal follow-ups when needed; do not invent individual constraints. Never write suggested replies, follow-up prompt options or anything after an open task that could reveal its answer, because apps may turn your text into suggested next prompts; end a task turn with the question.
+
+Start with a short seven-area screen, one question per turn, spanning easy to harder tasks. Explain the screen samples the course and is not a full assessment. Use the quick-placement sequence in the learning protocol, then expand utility/EMH, FX and individual biases as needed. Do not reveal solutions during placement. After the block show the learning board, tested IDs and untested areas; choose the weakest relevant prerequisite and a concrete next exercise. Do not invent evidence to fill a score. A brief topic-specific diagnostic can replace the broad screen when requested.
